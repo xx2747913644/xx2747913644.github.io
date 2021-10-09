@@ -1,1 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header-out{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(40, 41, 58);
+    animation-name: first;
+    position: relative;
+    animation-direction:  alternate;
+    animation-delay: 2s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes first{
+    from{background-color: rgb(40, 41, 58);}
+    to{background-color: rgb(41, 63, 63);}
+}
 
+.div-out{
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 100px;
+    animation-name: test;
+    position: relative;
+    animation-direction:  alternate;
+    animation-timing-function:ease;
+    animation-iteration-count: 2;
+    animation-duration: 3s;
+}
+@keyframes test{
+    0%   { left:0px; top:0px;}
+    25%  { left:1200px; top:0px;}
+    50%  { left:1200px; top:50px;}
+    75%  { left:0px; top:50px;}
+    100% { left:0px; top:0px;}
+}
+.div-out img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+.div-p{
+    width: 400px;
+    height:20px;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    font-size: 10px;
+    position: relative;
+    animation-name: two;
+    animation-delay: 6s;
+    animation-direction:  alternate;
+    animation-timing-function:ease;
+    animation-iteration-count: 4;
+    animation-duration: 3s;
+}
+@keyframes two{
+    from{opacity: 0;}
+    to{opacity: 0.6;}
+}
+.main-out{
+    width: 100%;
+    height: 380px;
+    background-color: rgb(40, 41, 58);
+    /* text-align: center; */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.main-div{
+    display: inline-block;
+    position: relative;
+    opacity: 0.1;
+    animation-name: name;
+    animation-delay: 12s;
+    animation-direction:  alternate;
+    animation-timing-function:ease;
+    animation-iteration-count: 4;
+    animation-duration: 3s;
+}
+@keyframes name{
+   from{left: 0px; top: 0px; opacity: 0;}
+   to{left: 1000px; top: 350px; opacity: 0.8;}
+}
+.main-outer{
+    display: inline-block;
+    position: relative;
+    opacity: 0.1;
+    animation-name: three;
+    animation-delay: 6s;
+    animation-direction:  alternate;
+    animation-timing-function:ease;
+    animation-iteration-count: 4;
+    animation-duration: 3s;
+}
+@keyframes three{
+   from{right: 0px; top: 0px; opacity: 0;}
+   to{right: 1000px; top: 350px; opacity: 0.8;}
+}
+.footer-out{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(40, 41, 58);
+    animation-name: first;
+    position: relative;
+    animation-direction:  alternate;
+    animation-delay: 2s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes first{
+    from{background-color: rgb(40, 41, 58);}
+    to{background-color: rgb(58, 59, 85);}
+}
+.footer-out button{
+    width: 70px;
+    height: 30px;
+    
+}
+.sub{
+    animation-name: user;
+    animation-direction:  alternate;
+    animation-timing-function:ease;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes user{
+    from{transform: translateY(0);}
+    to{transform: translateY(-900px);}
+}
