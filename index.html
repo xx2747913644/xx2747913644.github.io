@@ -1,1 +1,39 @@
-<h1>Hello Word</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="wrap">
+        <header class="header-out">
+            <div class="div-out">
+                <img src="./可爱.jpg" alt="">
+            </div>
+            <div class="div-p">
+                我不甘于平凡却又不得平凡所以我要努力不再平凡
+            </div>
+        </header>
+        <main class="main-out">
+            <div class="main-div">
+                我的青春还在继续
+            </div>
+            <div class="main-outer">
+                再多荆棘也要向前奔跑
+            </div>
+        </main>
+        <footer class="footer-out">
+            <button class="submit">按钮</button>
+        </footer>
+    </div>
+</body>
+<script>
+    document.getElementsByClassName('submit')[0].onclick=function(){
+        document.getElementById('wrap').setAttribute('class','sub')
+    };
+
+</script>
+</html>
