@@ -82,7 +82,12 @@ body{
     -webkit-box-orient: vertical;
 }
 .title::before{
-    content: "//";
+    content: "/";
     color: darkslateblue;
     margin-right: 10px;
+}
+.title-bottom::before{
+    content: "//";
+    color: darkslateblue;
+    margin-right: 3px;
 }
