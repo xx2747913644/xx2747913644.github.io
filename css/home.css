@@ -89,7 +89,7 @@ body{
 .title-bottom::before{
     content: "//";
     color: darkslateblue;
-    margin-right: 3px;
+    margin-right: 6px;
 }
 .title{
     color: #474747;
