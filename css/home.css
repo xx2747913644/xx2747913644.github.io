@@ -91,3 +91,11 @@ body{
     color: darkslateblue;
     margin-right: 3px;
 }
+.title{
+    color: #474747;
+    font-weight: normal;
+}
+.title-bottom{
+    color: #474747;
+    font-weight: normal;
+}
