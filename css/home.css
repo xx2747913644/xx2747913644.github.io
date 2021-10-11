@@ -73,19 +73,15 @@ body{
     border-radius: 10px;
     background-color: rgb(46, 46, 73); 
 }
-.div-out_outer{
-    width: 700px;
-}
-.div-outer_out{
-    width: 700px;
+.title-p{
+    text-indent: 24px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    text-indent: 2em;
 }
-.title-two::before{
+.title::before{
     content: "//";
     color: darkslateblue;
     margin-right: 10px;
