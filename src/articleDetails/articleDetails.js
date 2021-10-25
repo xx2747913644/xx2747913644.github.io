@@ -1,5 +1,5 @@
 import article from '../articleRote';
-import markdown from '../../assets/js/MarkDown';
+import Markdown from '../../assets/js/MarkDown';
 class Url{
     constructor(proto){
         this.countent=proto;
@@ -27,7 +27,6 @@ class Url{
         str += key +'='+this.countent[key]+'&';
     };
     str = str.substring(0,str.length-1);
-    console.log(str);
    }
 }
 
@@ -39,12 +38,10 @@ url.get('id') // 1；
 url.get('name') // xiaoming;
 article.forEach(item=>{
     if(item.id == url.obj.type){
-        let md = new markdown(item.article);
-        console.log(md)
-        document.querySelector('.text').innerHTML = md.text;
+        let md = new Markdown(item.article);
+        document.querySelector('.text').innerHTML = md.parse();
     }
 })
-
 
 
 
