@@ -192,5 +192,12 @@ let ellipsis = new Ellipsis({
     findAllButtonText: "查看",
     showFindAllButton: true
 })
+let ellipsistwo = new Ellipsis({
+    el: document.querySelector('.listtwo'),
+    textCount: 130,
+    findAllButtonText: "查看",
+    showFindAllButton: true
+})
 
 ellipsis.exec();
+ellipsistwo.exec();

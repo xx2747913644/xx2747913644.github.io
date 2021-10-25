@@ -1,4 +1,5 @@
 import article from '../articleRote';
+import markdown from '../../assets/js/MarkDown';
 class Url{
     constructor(proto){
         this.countent=proto;
@@ -38,7 +39,9 @@ url.get('id') // 1；
 url.get('name') // xiaoming;
 article.forEach(item=>{
     if(item.id == url.obj.type){
-        document.querySelector('.text').innerHTML = item.article;
+        let md = new markdown(item.article);
+        console.log(md)
+        document.querySelector('.text').innerHTML = md.text;
     }
 })
 
