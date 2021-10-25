@@ -1,0 +1,1 @@
+(()=>{"use strict";new class{constructor(e){this.parse=e}run(){this.parse.animation()}}({targets:[{el:document.querySelector(".box1"),animationClassName:"change"},{el:document.querySelector(".box2"),animationClassName:"change"},{el:document.querySelector(".box3"),animationClassName:"change"},{el:document.querySelector(".box4"),animationClassName:"change"}],count:4})})();

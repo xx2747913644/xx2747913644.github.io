@@ -1,0 +1,51 @@
+/* body{
+    margin: 0;
+    padding: 0;
+}
+.box1{
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+}
+.change{
+    animation: move2 2s alternate both;
+}
+@keyframes move2{
+    to{
+        background-color: cadetblue;
+    }
+}
+.box2{
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+}
+.box3{
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+}
+.box4{
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+} */
+
+
+ 
+.change{  
+    animation: move 1s;   
+    animation-fill-mode: forwards;
+}
+@keyframes move{ 
+    to{left: 0;}
+} 
+
+.changes {
+    animation: move 1s;   
+    animation-fill-mode: forwards;
+}
+@keyframes move{ 
+    from{opacity: 0;}
+    to{ opacity: 1; left: 0px;}
+} 

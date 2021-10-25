@@ -6,12 +6,12 @@ body{
     width: 100%;
     height: 100px;
     background-color: rgb(40, 41, 58);
-    animation-name: first;
     position: relative;
+    animation-name: first;
     animation-direction:  alternate;
     animation-delay: 2s;
     animation-timing-function:ease;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     animation-duration: 3s;
 }
 @keyframes first{
@@ -25,8 +25,10 @@ body{
     height: 50px;
     background-color: aliceblue;
     border-radius: 100px;
-    animation-name: test;
     position: relative;
+}
+.div-change{
+    animation-name: test;
     animation-direction:  alternate;
     animation-timing-function:ease;
     animation-iteration-count: 2;
@@ -34,8 +36,8 @@ body{
 }
 @keyframes test{
     0%   { left:0px; top:0px;}
-    25%  { left:1200px; top:0px;}
-    50%  { left:1200px; top:50px;}
+    25%  { left:1850px; top:0px;}
+    50%  { left: 1850px; top:50px;}
     75%  { left:0px; top:50px;}
     100% { left:0px; top:0px;}
 }
@@ -50,10 +52,12 @@ body{
     color: #fff;
     text-align: center;
     margin: auto;
-    font-size: 10px;
+    font-size: 15px;
     position: relative;
+    
+}
+.change{
     animation-name: two;
-    animation-delay: 6s;
     animation-direction:  alternate;
     animation-timing-function:ease;
     animation-iteration-count: 4;
@@ -65,19 +69,22 @@ body{
 }
 .main-out{
     width: 100%;
-    height: 380px;
+    height: 700px;
     background-color: rgb(40, 41, 58);
     /* text-align: center; */
     color: #fff;
     display: flex;
+    font-size: 20px;
     justify-content: space-between;
 }
 .main-div{
     display: inline-block;
     position: relative;
     opacity: 0.1;
+}
+.main-change{
     animation-name: name;
-    animation-delay: 12s;
+    /* animation-delay: 12s; */
     animation-direction:  alternate;
     animation-timing-function:ease;
     animation-iteration-count: 4;
@@ -85,14 +92,17 @@ body{
 }
 @keyframes name{
    from{left: 0px; top: 0px; opacity: 0;}
-   to{left: 1000px; top: 350px; opacity: 0.8;}
+   to{left: 1700px; top: 650px; opacity: 0.8;}
 }
-.main-outer{
+.main-outer1{
     display: inline-block;
     position: relative;
     opacity: 0.1;
+   
+}
+.change-outer{
     animation-name: three;
-    animation-delay: 6s;
+    /* animation-delay: 12s; */
     animation-direction:  alternate;
     animation-timing-function:ease;
     animation-iteration-count: 4;
@@ -100,7 +110,7 @@ body{
 }
 @keyframes three{
    from{right: 0px; top: 0px; opacity: 0;}
-   to{right: 1000px; top: 350px; opacity: 0.8;}
+   to{right: 1700px; top: 650px; opacity: 0.8;}
 }
 .footer-out{
     width: 100%;
@@ -109,9 +119,9 @@ body{
     animation-name: first;
     position: relative;
     animation-direction:  alternate;
-    animation-delay: 2s;
+    /* animation-delay: 2s; */
     animation-timing-function:ease;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     animation-duration: 3s;
 }
 @keyframes first{
@@ -136,20 +146,22 @@ body{
 }
 .div-main{
     width: 100%;
-    height: 500px;
+    height: 900px;
     background-color: rgb(40, 41, 58);
     display: flex;
 }
 .div-main_first{
-    width: 300px;
-    height: 400px;
+    width: 420px;
+    height: 600px;
     margin-top: 70px;
     margin-left: 10px;
     border-radius: 20px;
     position: relative;
-    background-color: aquamarine;
+    border:1px solid black ;
+}
+.changes{
     animation-name: bear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     animation-duration: 10s;
     animation-direction:alternate;
     animation-timing-function:linear;
@@ -162,89 +174,32 @@ body{
     80%{top:-10px}
     100%{top:10px}
    }
-.div-main_first img{
-    width: 300px;
-    height: 400px;
-    border-radius: 20px;
-}
-.div-main_second{
-    width: 300px;
-    height: 460px;
+
+.div-main_firste{
+    width: 500px;
+    height: 760px;
     margin-top: 20px;
     margin-left: 10px;
     border-radius: 20px;
     position: relative;
-    background-color: aquamarine;
-    animation-name: bearone;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    animation-direction:alternate;
-    animation-timing-function:linear;
+    border:1px solid black ;
 }
-@keyframes bearone{
-    0%{top:10px}
-    20%{top:-10px}
-    40%{top:10px}
-    60%{top:-10px}
-    80%{top:10px}
-    100%{top:-10px}
-   }
-.div-main_second img{
-    width: 300px;
-    height: 460px;
-    border-radius: 20px;
-}
-.div-main_third{
-    width: 300px;
-    height: 400px;
+
+   .div-main_firster{
+    width: 420px;
+    height: 600px;
     margin-top: 70px;
     margin-left: 10px;
     border-radius: 20px;
     position: relative;
-    background-color: aquamarine;
-    animation-name: beartwo;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    animation-direction:alternate;
-    animation-timing-function:linear;
+    border:1px solid black ;
 }
-@keyframes beartwo{
-    0%{top:-10px}
-    20%{top:10px}
-    40%{top:-10px}
-    60%{top:10px}
-    80%{top:-10px}
-    100%{top:10px}
-   }
-.div-main_third img{
-    width: 300px;
-    height: 400px;
-    border-radius: 20px;
-}
-.div-main_four{
-    width: 300px;
-    height: 460px;
-    margin-top:20px;
+   .div-main_firstert{
+    width: 500px;
+    height: 760px;
+    margin-top: 20px;
     margin-left: 10px;
     border-radius: 20px;
     position: relative;
-    background-color: aquamarine;
-    animation-name: bearthird;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    animation-direction:alternate;
-    animation-timing-function:linear;
+    border:1px solid black ;
 }
-@keyframes bearthird{
-    0%{top:10px}
-    20%{top:-10px}
-    40%{top:10px}
-    60%{top:-10px}
-    80%{top:10px}
-    100%{top:-10px}
-   }
-.div-main_four img{
-    width: 300px;
-    height: 460px;
-    border-radius: 20px;
-   }

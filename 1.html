@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function studentName(){
+        let res ={};
+        let myRes={
+            name:'zhangsan'
+        }
+        for (const key in myRes) {
+            console.log(key);
+            console.log(myRes[key]);
+            res.name = myRes[key];
+        }
+        return res;
+
+    }
+
+</script>
+<script>
+   var arr='abcd';
+   var b  =Array.from(arr);
+   console.log(b);
+   var c = b.reverse();
+   console.log(c);
+   var d = c.join();
+   console.log(d);
+   
+</script>
+</html>

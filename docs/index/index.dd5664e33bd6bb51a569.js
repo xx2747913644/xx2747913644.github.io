@@ -1,0 +1,1 @@
+(()=>{let n="# 我叫鑫鑫".match(/(#+\s*)|\S+|\n/g,(function(n){}));console.log(n)})();

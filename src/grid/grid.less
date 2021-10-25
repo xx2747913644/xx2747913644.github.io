@@ -58,14 +58,6 @@ body{
     display: flex;
     margin-top: 20px;
 }
-.div-out{
-    width: 700px;  
-}
-.div-out p{
-    font-size: 18px;
-    color: #666;
-}
-
 .main-div{
     width: 300px;
 }
@@ -76,55 +68,22 @@ body{
     border-radius: 10px;
     background-color: rgb(189, 188, 197); 
 }
-
-.title-p{
-    text-indent: 24px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+.box1{
+   left: -2000px;
+    position: relative;
 }
-.title{
-    color: #474747;
-    font-weight: normal;
+#submit,#shou{
+    display: none;
 }
-.title-bottom{
-    color: #474747;
-    font-weight: normal;
+#oBtn{
+    display: flex;
 }
-.title::before{
-    content: "/";
-    color: darkslateblue;
-    margin-right: 10px;
-}
-.title-bottom::before{
-    content: "//";
-    color: darkslateblue;
-    margin-right: 6px;
+#btn{
+    width: 100px;
+    height: 30px;
+    background-color: aquamarine;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 30px;
 }
 
-
-/* .main{
-    height: calc(100vh - 100px);(可以计算平分高)
-} */
-
-
-
-
-/* .header{
-    height: var(--h);
-}
-:root{((根伪类))
-    --h:50px;
-} */
-
-
-
-/* 
-.header{
-    height: var(--header-height);
-}
-.main{
-    height: calc(100vh - var(--header-height));
-} */
